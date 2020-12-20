@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://shrivaathsav:shriv@cluster0.jaqan.mongodb.net/Leaderboard?retryWrites=true&w=majority"
+}

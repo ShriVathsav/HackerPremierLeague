@@ -1,0 +1,51 @@
+#navbar{
+    border-radius: 0px;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 120;
+}
+
+#logo-name{
+    font-size: 25px;
+}
+
+/*ABOVE 990 PX*/
+@media only screen and (min-width: 990px){
+
+}
+
+/*BELOW 990 PX*/
+@media only screen and (max-width: 990px){
+
+}
+
+/*ABOVE 767 PX*/
+@media only screen and (min-width: 767px){
+    
+}
+
+/*BELOW 767 PX*/
+@media only screen and (max-width: 767px){
+    #navbar-right-menu{
+        display: none;
+    }
+    #logo-menu-item{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/*ABOVE 510 PX*/
+@media only screen and (min-width: 510px){
+}
+
+
+/*BELOW 510 PX*/
+@media only screen and (max-width: 510px){
+    #logo-name{
+        font-size: 22px;
+    }
+}
