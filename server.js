@@ -1,5 +1,6 @@
 const express = require("express")
 const connectDB = require("./config/db")
+const router = express.Router()
 
 const app = express()
 
@@ -12,6 +13,12 @@ app.get("/", (req, res) => {
 })
 
 app.use("/api/team/", require("./routes/teamRoutes"))
+
+router.use(function(req, res){
+    res.sendFile(path.join(__dirname, "../client/build/index.html"))
+})
+
+app.use(express.static("client/build"))
 
 const PORT = process.env.PORT || 5000
 
